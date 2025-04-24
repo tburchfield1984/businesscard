@@ -61,8 +61,8 @@ export default function BusinessCard() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#EDE9E3] p-4">
-      <div className="max-w-md w-full p-6 rounded-2xl shadow-lg bg-[#E7D7C9]">
+    <div className="min-h-screen flex items-center justify-center bg-[#E7D7C9] p-4">
+      <div className="max-w-md w-full p-6 rounded-2xl shadow-lg bg-[#EDE9E3]">
         {showPopup && (
           <div className="mb-4 text-center text-[#A38F85] font-semibold">
             I look forward to working with you!
@@ -76,7 +76,7 @@ export default function BusinessCard() {
 
         <div className="text-center">
           <img src="/539A0076.jpg" alt="Tiffany Burchfield" className="w-32 h-40 mx-auto mb-4 object-contain" />
-          <h1 className="text-2xl font-bold text-[#A38F85]">Tiffany Burchfield</h1>
+          <h1 className="text-2xl font-bold text-[#D4B2A7]">Tiffany Burchfield</h1>
           <p className="text-[#A38F85]">Branch Manager | NMLSR: 1614501</p>
         </div>
 
