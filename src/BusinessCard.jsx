@@ -120,7 +120,7 @@ export default function BusinessCard() {
           <p>PA DBA Name: Lakeview Lenders Corp.</p>
         </div>
         <div className="flex items-center space-x-3 mt-2">
-          <Globe className="w-5 h-5" />
+          <Globe className="w-5 h-5 text-[#485778]" />
           <a href="https://www.lmbankers.com" className="text-[#485778] hover:underline">Visit Us Online</a>
         </div>
 
