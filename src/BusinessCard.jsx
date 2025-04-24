@@ -61,26 +61,26 @@ export default function BusinessCard() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#E7D7C9] p-4">
-      <div className="max-w-md w-full p-6 rounded-2xl shadow-lg bg-[#EDE9E3]">
+    <div className="min-h-screen flex items-center justify-center bg-[#F6EBE7] p-4">
+      <div className="max-w-md w-full p-6 rounded-2xl shadow-lg bg-[#ECD9D2]">
         {showPopup && (
-          <div className="mb-4 text-center text-[#A38F85] font-semibold">
+          <div className="mb-4 text-center text-[#BB8F8C] font-semibold">
             I look forward to working with you!
           </div>
         )}
         {sharePopup && (
-          <div className="mb-4 text-center text-[#A38F85] font-semibold">
+          <div className="mb-4 text-center text-[#BB8F8C] font-semibold">
             Contact downloaded — you can now share it via text or email.
           </div>
         )}
 
         <div className="text-center">
           <img src="/539A0076.jpg" alt="Tiffany Burchfield" className="w-32 h-40 mx-auto mb-4 object-contain" />
-          <h1 className="text-2xl font-bold text-[#A38F85]">Tiffany Burchfield</h1>
-          <p className="text-[#A38F85]">Branch Manager | NMLSR: 1614501</p>
+          <h1 className="text-2xl font-bold text-[#BB8F8C]">Tiffany Burchfield</h1>
+          <p className="text-[#BB8F8C]">Branch Manager | NMLSR: 1614501</p>
         </div>
 
-        <div className="mt-6 space-y-4 text-[#D4B2A7]">
+        <div className="mt-6 space-y-4 text-[#485778]">
           <div className="flex items-center space-x-3"><Mail className="w-5 h-5" /><span>tburchfield@Lmbankers.com</span></div>
           <div className="flex items-center space-x-3"><Phone className="w-5 h-5" /><span>M: (678) 943-0996</span></div>
           <div className="flex items-center space-x-3"><Phone className="w-5 h-5" /><span>O: (646) 452-5004</span></div>
@@ -89,27 +89,27 @@ export default function BusinessCard() {
           <div className="flex items-center space-x-3"><Home className="w-5 h-5" /><span>1735 Pennsylvania Ave McDonough, GA 30253</span></div>
 
           <div className="mt-4 space-y-2">
-            <button className="w-full bg-[#e4cfc3] text-[#7a645c] p-2 rounded-md" onClick={handleVCardDownload}>Save Contact</button>
-            <button className="w-full border border-[#e4cfc3] text-[#7a645c] p-2 rounded-md" onClick={handleShare}>Share Contact</button>
+            <button className="w-full bg-[#9BA986] text-[#E8E7DD] p-2 rounded-md" onClick={handleVCardDownload}>Save Contact</button>
+            <button className="w-full border border-[#9BA79C] text-[#E8E7DD] p-2 rounded-md" onClick={handleShare}>Share Contact</button>
           </div>
 
           <div className="flex justify-center"><canvas ref={qrRef} className="mt-4" /></div>
         </div>
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-3">
-          <input name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" className="w-full p-2 border border-gray-300 rounded-md bg-[#fef7f4]" />
-          <input name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" className="w-full p-2 border border-gray-300 rounded-md bg-[#fef7f4]" />
-          <input name="phone" value={formData.phone} onChange={handleChange} placeholder="Your Phone Number" className="w-full p-2 border border-gray-300 rounded-md bg-[#fef7f4]" />
-          <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Your Message" className="w-full p-2 border border-gray-300 rounded-md bg-[#fef7f4]" />
+          <input name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" className="w-full p-2 border border-gray-300 rounded-md bg-[#ABB1BC]" />
+          <input name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" className="w-full p-2 border border-gray-300 rounded-md bg-[#ABB1BC]" />
+          <input name="phone" value={formData.phone} onChange={handleChange} placeholder="Your Phone Number" className="w-full p-2 border border-gray-300 rounded-md bg-[#ABB1BC]" />
+          <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Your Message" className="w-full p-2 border border-gray-300 rounded-md bg-[#ABB1BC]" />
           {formPopup && (
             <div className="text-center text-[#a96c65] font-semibold">
               Your message has been sent.
             </div>
           )}
-          <button type="submit" className="w-full bg-[#e4cfc3] text-[#7a645c] p-2 rounded-md">Send Message</button>
+          <button type="submit" className="w-full bg-[#9BA986] text-[#E8E7DD] p-2 rounded-md">Send Message</button>
         </form>
 
-        <div className="text-xs text-[#a96c65] mt-6">
+        <div className="text-xs text-[#C39296] mt-6">
           <p className="mt-2 font-semibold">Lakeview Mortgage Bankers Corp.</p>
           <p>NMLS: 34690</p>
           <p>Corporate Address: 5512 Merrick Rd Massapequa, NY 11758</p>
@@ -121,10 +121,10 @@ export default function BusinessCard() {
         </div>
         <div className="flex items-center space-x-3 mt-2">
           <Globe className="w-5 h-5" />
-          <a href="https://www.lmbankers.com" className="text-[#a96c65] hover:underline">Visit Us Online</a>
+          <a href="https://www.lmbankers.com" className="text-[#C39296] hover:underline">Visit Us Online</a>
         </div>
 
-        <div className="text-xs text-[#a96c65] mt-4">
+        <div className="text-xs text-[#9E9784] mt-4">
           <p className="mb-2 font-semibold">WIRE FRAUD NOTICE:</p>
           <p>Never wire funds to any accounts without calling the corresponding office to confirm wire information and authenticity. All wire transfers are subject to verbal verification.</p>
         </div>
