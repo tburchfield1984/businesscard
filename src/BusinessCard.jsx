@@ -97,12 +97,12 @@ export default function BusinessCard() {
         </div>
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-3">
-          <input name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" className="w-full p-2 border border-gray-300 rounded-md bg-[#735e59]" />
-          <input name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" className="w-full p-2 border border-gray-300 rounded-md bg-[#735e59]" />
-          <input name="phone" value={formData.phone} onChange={handleChange} placeholder="Your Phone Number" className="w-full p-2 border border-gray-300 rounded-md bg-[#735e59]" />
-          <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Your Message" className="w-full p-2 border border-gray-300 rounded-md bg-[#735e59]" />
+          <input name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" className="w-full p-2 border border-gray-300 rounded-md bg-[#735e59] text-[#485778]" />
+          <input name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" className="w-full p-2 border border-gray-300 rounded-md bg-[#735e59] text-[#485778]" />
+          <input name="phone" value={formData.phone} onChange={handleChange} placeholder="Your Phone Number" className="w-full p-2 border border-gray-300 rounded-md bg-[#735e59] text-[#485778]" />
+          <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Your Message" className="w-full p-2 border border-gray-300 rounded-md bg-[#735e59] text-[#485778]" />
           {formPopup && (
-            <div className="text-center text-[#735e59] font-semibold">
+            <div className="text-center text-[#485778]] font-semibold">
               Your message has been sent.
             </div>
           )}
