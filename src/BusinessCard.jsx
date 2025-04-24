@@ -20,7 +20,7 @@ export default function BusinessCard() {
   }, []);
 
   const handleVCardDownload = () => {
-    const vcardData = `BEGIN:VCARD\nVERSION:3.0\nFN:Tiffany Burchfield\nTITLE:Branch Manager - Lakeview Mortgage Corp.\nURL;TITLE:https://mylendertiffany.com\nEMAIL:tburchfield@Lmbankers.com\nTEL;CELL:+1 (678) 943-0996\nTEL;WORK:+1 (646) 452-5004\nTEL;FAX:+1 (516) 882-2169\nADR:;;5512 Merrick Rd;Massapequa;NY;11758;USA\nNOTE:NMLS# 1614501\nEND:VCARD`;
+    const vcardData = `BEGIN:VCARD\nVERSION:3.0\nFN:Tiffany Burchfield\nTITLE:Branch Manager\nORG:Lakeview Mortgage Corp.\nURL;TITLE:https://mylendertiffany.com\nEMAIL:tburchfield@Lmbankers.com\nTEL;CELL:+1 (678) 943-0996\nTEL;WORK:+1 (646) 452-5004\nTEL;FAX:+1 (516) 882-2169\nADR:;;1735 Pennsylvania Ave;McDonough;GA;30253;USA\nNOTE:NMLSR: 1614501\nEND:VCARD`;
     const blob = new Blob([vcardData], { type: 'text/vcard' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
@@ -77,16 +77,16 @@ export default function BusinessCard() {
         <div className="text-center">
           <img src="/539A0076.jpg" alt="Tiffany Burchfield" className="w-32 h-40 mx-auto mb-4 object-contain" />
           <h1 className="text-2xl font-bold text-[#a96c65]">Tiffany Burchfield</h1>
-          <p className="text-[#8c7266]">Branch Manager | NMLS #1614501</p>
+          <p className="text-[#8c7266]">Branch Manager | NMLSR: 1614501</p>
         </div>
 
         <div className="mt-6 space-y-4 text-[#7a645c]">
-          <div className="flex items-center space-x-3"><Mail className="w-5 h-5" /><span>tburchfield@lmbankers.com</span></div>
+          <div className="flex items-center space-x-3"><Mail className="w-5 h-5" /><span>tburchfield@Lmbankers.com</span></div>
           <div className="flex items-center space-x-3"><Phone className="w-5 h-5" /><span>M: (678) 943-0996</span></div>
           <div className="flex items-center space-x-3"><Phone className="w-5 h-5" /><span>O: (646) 452-5004</span></div>
           <div className="flex items-center space-x-3"><Phone className="w-5 h-5" /><span>F: (516) 882-2169</span></div>
           <div className="flex items-center space-x-3"><Globe className="w-5 h-5" /><a href="https://lakeviewmortgage.mymortgage-online.com/loan-app/?siteId=1097684050&lar=tburchfield&workFlowId=97054" className="text-[#a96c65] hover:underline">Apply Now!</a></div>
-          <div className="flex items-center space-x-3"><Home className="w-5 h-5" /><span>5512 Merrick Rd, Massapequa, NY 11758</span></div>
+          <div className="flex items-center space-x-3"><Home className="w-5 h-5" /><span>1735 Pennsylvania Ave McDonough, GA 30253</span></div>
 
           <div className="mt-4 space-y-2">
             <button className="w-full bg-[#e4cfc3] text-[#7a645c] p-2 rounded-md" onClick={handleVCardDownload}>Save Contact</button>
@@ -110,11 +110,14 @@ export default function BusinessCard() {
         </form>
 
         <div className="text-xs text-[#a96c65] mt-6">
-          <p className="mt-2 font-semibold">Lakeview Mortgage Bankers Corp. NMLS: 34690</p>
+          <p className="mt-2 font-semibold">Lakeview Mortgage Bankers Corp.</p>
+          <p>NMLS: 34690</p>
           <p>Corporate Address: 5512 Merrick Rd Massapequa, NY 11758</p>
           <p>Telephone: (516) 264-7040</p>
           <p>Licensed Lender in CO, CT, FL, GA, IL, MD, MI, NJ, NY, PA, VA</p>
           <p>Licensed Broker in CO, CT, FL, GA, IL, MD, MI, NJ, NY, PA, SC, VA</p>
+          <p>GA/SC DBA Name: Lakeview Mortgage Corp.</p>
+          <p>PA DBA Name: Lakeview Lenders Corp.</p>
         </div>
         <div className="flex items-center space-x-3 mt-2">
           <Globe className="w-5 h-5" />
