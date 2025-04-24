@@ -93,7 +93,6 @@ export default function BusinessCard() {
             <button className="w-full bg-[#735e59] text-[#d7cac1] p-2 rounded-md" onClick={handleShare}>Share Contact</button>
           </div>
 
-          <div className="flex justify-center"><canvas ref={qrRef} className="mt-4" /></div>
         </div>
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-3">
@@ -124,6 +123,8 @@ export default function BusinessCard() {
           <a href="https://www.lmbankers.com" className="text-[#485778] hover:underline">Visit Us Online</a>
         </div>
 
+        <div className="flex justify-center"><canvas ref={qrRef} className="mt-4" /></div>
+        
         <div className="text-xs text-[#9E9784] mt-4">
           <p className="mb-2 font-semibold">WIRE FRAUD NOTICE:</p>
           <p>Never wire funds to any accounts without calling the corresponding office to confirm wire information and authenticity. All wire transfers are subject to verbal verification.</p>
