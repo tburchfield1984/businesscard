@@ -61,8 +61,8 @@ export default function BusinessCard() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#F6EBE7] p-4">
-      <div className="max-w-md w-full p-6 rounded-2xl shadow-lg bg-[#ECD9D2]">
+    <div className="min-h-screen flex items-center justify-center bg-[#ECD9D2] p-4">
+      <div className="max-w-md w-full p-6 rounded-2xl shadow-lg bg-[#F6EBE7]">
         {showPopup && (
           <div className="mb-4 text-center text-[#BB8F8C] font-semibold">
             I look forward to working with you!
@@ -90,7 +90,7 @@ export default function BusinessCard() {
 
           <div className="mt-4 space-y-2">
             <button className="w-full bg-[#9BA986] text-[#E8E7DD] p-2 rounded-md" onClick={handleVCardDownload}>Save Contact</button>
-            <button className="w-full border border-[#9BA79C] text-[#E8E7DD] p-2 rounded-md" onClick={handleShare}>Share Contact</button>
+            <button className="w-full border border-[#9BA986] text-[#E8E7DD] p-2 rounded-md" onClick={handleShare}>Share Contact</button>
           </div>
 
           <div className="flex justify-center"><canvas ref={qrRef} className="mt-4" /></div>
