@@ -61,26 +61,26 @@ export default function BusinessCard() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#f8f4f1] p-4">
-      <div className="max-w-md w-full p-6 rounded-2xl shadow-lg bg-[#fffaf9]">
+    <div className="min-h-screen flex items-center justify-center bg-[#EDE9E3] p-4">
+      <div className="max-w-md w-full p-6 rounded-2xl shadow-lg bg-[#E7D7C9]">
         {showPopup && (
-          <div className="mb-4 text-center text-[#a96c65] font-semibold">
+          <div className="mb-4 text-center text-[#A38F85] font-semibold">
             I look forward to working with you!
           </div>
         )}
         {sharePopup && (
-          <div className="mb-4 text-center text-[#a96c65] font-semibold">
+          <div className="mb-4 text-center text-[#A38F85] font-semibold">
             Contact downloaded — you can now share it via text or email.
           </div>
         )}
 
         <div className="text-center">
           <img src="/539A0076.jpg" alt="Tiffany Burchfield" className="w-32 h-40 mx-auto mb-4 object-contain" />
-          <h1 className="text-2xl font-bold text-[#a96c65]">Tiffany Burchfield</h1>
-          <p className="text-[#8c7266]">Branch Manager | NMLSR: 1614501</p>
+          <h1 className="text-2xl font-bold text-[#A38F85]">Tiffany Burchfield</h1>
+          <p className="text-[#A38F85]">Branch Manager | NMLSR: 1614501</p>
         </div>
 
-        <div className="mt-6 space-y-4 text-[#7a645c]">
+        <div className="mt-6 space-y-4 text-[#D4B2A7]">
           <div className="flex items-center space-x-3"><Mail className="w-5 h-5" /><span>tburchfield@Lmbankers.com</span></div>
           <div className="flex items-center space-x-3"><Phone className="w-5 h-5" /><span>M: (678) 943-0996</span></div>
           <div className="flex items-center space-x-3"><Phone className="w-5 h-5" /><span>O: (646) 452-5004</span></div>
