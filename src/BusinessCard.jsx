@@ -89,27 +89,27 @@ export default function BusinessCard() {
           <div className="flex items-center space-x-3"><Home className="w-5 h-5" /><span>1735 Pennsylvania Ave McDonough, GA 30253</span></div>
 
           <div className="mt-4 space-y-2">
-            <button className="w-full bg-[#9BA986] text-[#E8E7DD] p-2 rounded-md" onClick={handleVCardDownload}>Save Contact</button>
-            <button className="w-full border border-[#9BA986] text-[#E8E7DD] p-2 rounded-md" onClick={handleShare}>Share Contact</button>
+            <button className="w-full bg-[#9BA986] text-[#485778] p-2 rounded-md" onClick={handleVCardDownload}>Save Contact</button>
+            <button className="w-full bg-[#9BA986] text-[#485778] p-2 rounded-md" onClick={handleShare}>Share Contact</button>
           </div>
 
           <div className="flex justify-center"><canvas ref={qrRef} className="mt-4" /></div>
         </div>
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-3">
-          <input name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" className="w-full p-2 border border-gray-300 rounded-md bg-[#ABB1BC]" />
-          <input name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" className="w-full p-2 border border-gray-300 rounded-md bg-[#ABB1BC]" />
-          <input name="phone" value={formData.phone} onChange={handleChange} placeholder="Your Phone Number" className="w-full p-2 border border-gray-300 rounded-md bg-[#ABB1BC]" />
-          <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Your Message" className="w-full p-2 border border-gray-300 rounded-md bg-[#ABB1BC]" />
+          <input name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" className="w-full p-2 border border-gray-300 rounded-md bg-[#e4d5d4]" />
+          <input name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" className="w-full p-2 border border-gray-300 rounded-md bg-[#e4d5d4]" />
+          <input name="phone" value={formData.phone} onChange={handleChange} placeholder="Your Phone Number" className="w-full p-2 border border-gray-300 rounded-md bg-[#e4d5d4]" />
+          <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Your Message" className="w-full p-2 border border-gray-300 rounded-md bg-[#e4d5d4]" />
           {formPopup && (
             <div className="text-center text-[#a96c65] font-semibold">
               Your message has been sent.
             </div>
           )}
-          <button type="submit" className="w-full bg-[#9BA986] text-[#E8E7DD] p-2 rounded-md">Send Message</button>
+          <button type="submit" className="w-full bg-[#9BA986] text-[#485778] p-2 rounded-md">Send Message</button>
         </form>
-
-        <div className="text-xs text-[#C39296] mt-6">
+        
+        <div className="text-xs text-[#BB8F8c] mt-6">
           <p className="mt-2 font-semibold">Lakeview Mortgage Bankers Corp.</p>
           <p>NMLS: 34690</p>
           <p>Corporate Address: 5512 Merrick Rd Massapequa, NY 11758</p>
