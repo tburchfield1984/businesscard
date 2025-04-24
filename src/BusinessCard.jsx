@@ -20,7 +20,7 @@ export default function BusinessCard() {
   }, []);
 
   const handleVCardDownload = () => {
-    const vcardData = `BEGIN:VCARD\nVERSION:3.0\nFN:Tiffany Burchfield\nTITLE:Branch Manager\nORG:Lakeview Mortgage Corp.\nURL;TITLE:https://mylendertiffany.com\nEMAIL:tburchfield@Lmbankers.com\nTEL;type=CELL:+1 (678) 943-0996\nTEL;type=WORK:+1 (646) 452-5004\nTEL;type=FAX:+1 (516) 882-2169\nADR:;;1735 Pennsylvania Ave;McDonough;GA;30253;USA\nNOTE:NMLSR: 1614501\nEND:VCARD`;
+    const vcardData = `BEGIN:VCARD\nVERSION:3.0\nFN:Tiffany Burchfield\nTITLE:Branch Manager\nORG:Lakeview Mortgage Corp.\nURL;TITLE:https://mylendertiffany.com\nEMAIL;type=INTERNET;TYPE=WORK:tburchfield@Lmbankers.com\nTEL;type=CELL:+1 (678) 943-0996\nTEL;type=WORK:+1 (646) 452-5004\nTEL;type=FAX:+1 (516) 882-2169\nADR:;;1735 Pennsylvania Ave;McDonough;GA;30253;USA\nNOTE:NMLSR: 1614501\nEND:VCARD`;
     const blob = new Blob([vcardData], { type: 'text/vcard' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
