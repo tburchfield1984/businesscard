@@ -87,7 +87,12 @@ export default function BusinessCard() {
           <div className="flex items-center space-x-3"><Phone className="w-5 h-5" /><span>F: (516) 882-2169</span></div>
           <div className="flex items-center space-x-3"><Globe className="w-5 h-5" /><a href="https://lakeviewmortgage.mymortgage-online.com/loan-app/?siteId=1097684050&lar=tburchfield&workFlowId=97054" className="text-[#a96c65] hover:underline">Apply Now!</a></div>
           <div className="flex items-center space-x-3"><Home className="w-5 h-5" /><span>1735 Pennsylvania Ave McDonough, GA 30253</span></div>
-
+	<div className="flex items-center space-x-3">
+ 	  <img src="/instagram.png" alt="Instagram" className="w-5 h-5" />
+ 	  <a href="https://www.instagram.com/mylendertiffany" className="text-[#a96c65] hover:underline">
+    		Instagram
+  	  </a>
+	</div>
           <div className="mt-4 space-y-2">
             <button className="w-full bg-[#e4cfc3] text-[#7a645c] p-2 rounded-md" onClick={handleVCardDownload}>Save Contact</button>
             <button className="w-full border border-[#e4cfc3] text-[#7a645c] p-2 rounded-md" onClick={handleShare}>Share Contact</button>
