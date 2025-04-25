@@ -99,12 +99,7 @@ export default function BusinessCard() {
               O: (646) 452-5004
             </a>
           </div>
-          <div className="flex items-center space-x-3">
-            <Phone className="w-5 h-5" />
-            <a href="tel:+15168822169" className="text-[#a96c65] hover:underline">
-              F: (516) 882-2169
-            </a>
-          </div>
+         <div className="flex items-center space-x-3"><Phone className="w-5 h-5" /><span>F: (516) 882-2169</span></div>
           <div className="flex items-center space-x-3">
             <Globe className="w-5 h-5" />
             <a href="https://lakeviewmortgage.mymortgage-online.com/loan-app/?siteId=1097684050&lar=tburchfield&workFlowId=97054" className="text-[#a96c65] hover:underline">
