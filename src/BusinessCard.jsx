@@ -75,7 +75,7 @@ export default function BusinessCard() {
         )}
 
         <div className="text-center">
-          <img src="/headshot1.jpg" alt="Tiffany Burchfield" className="w-32 h-40 mx-auto mb-4 object-contain" />
+          <img src="/Headshot1.jpg" alt="Tiffany Burchfield" className="w-32 h-40 mx-auto mb-4 object-contain" />
           <h1 className="text-2xl font-bold text-[#a96c65]">Tiffany Burchfield</h1>
           <p className="text-[#8c7266]">Branch Manager | NMLSR: 1614501</p>
         </div>
