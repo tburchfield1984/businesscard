@@ -81,12 +81,45 @@ export default function BusinessCard() {
         </div>
 
         <div className="mt-6 space-y-4 text-[#7a645c]">
-          <div className="flex items-center space-x-3"><Email className="w-5 h-5" /><span>tburchfield@Lmbankers.com</span></div>
-          <div className="flex items-center space-x-3"><Phone className="w-5 h-5" /><a href="tel:+16789430996" className="text-[#a96c65] hover:underline">M: (678) 943-0996</a></div>
-	  <div className="flex items-center space-x-3"><Phone className="w-5 h-5" /><a href="tel:+16464525004" className="text-[#a96c65] hover:underline">O: (646) 452-5004</a></div>
-          <div className="flex items-center space-x-3"><Phone className="w-5 h-5" /><span>F: (516) 882-2169</span></div>
-          <div className="flex items-center space-x-3"><Globe className="w-5 h-5" /><a href="https://lakeviewmortgage.mymortgage-online.com/loan-app/?siteId=1097684050&lar=tburchfield&workFlowId=97054" className="text-[#a96c65] hover:underline">Apply Now!</a></div>
-          <div className="flex items-center space-x-3"><Home className="w-5 h-5" /><span>1735 Pennsylvania Ave McDonough, GA 30253</span></div>
+          <div className="flex items-center space-x-3">
+            <Mail className="w-5 h-5" />
+            <a href="mailto:tburchfield@lmbankers.com" className="text-[#a96c65] hover:underline">
+              tburchfield@lmbankers.com
+            </a>
+          </div>
+          <div className="flex items-center space-x-3">
+            <Phone className="w-5 h-5" />
+            <a href="tel:+16789430996" className="text-[#a96c65] hover:underline">
+              M: (678) 943-0996
+            </a>
+          </div>
+          <div className="flex items-center space-x-3">
+            <Phone className="w-5 h-5" />
+            <a href="tel:+16464525004" className="text-[#a96c65] hover:underline">
+              O: (646) 452-5004
+            </a>
+          </div>
+          <div className="flex items-center space-x-3">
+            <Phone className="w-5 h-5" />
+            <a href="tel:+15168822169" className="text-[#a96c65] hover:underline">
+              F: (516) 882-2169
+            </a>
+          </div>
+          <div className="flex items-center space-x-3">
+            <Globe className="w-5 h-5" />
+            <a href="https://lakeviewmortgage.mymortgage-online.com/loan-app/?siteId=1097684050&lar=tburchfield&workFlowId=97054" className="text-[#a96c65] hover:underline">
+              Apply Now!
+            </a>
+          </div>
+          <div className="flex items-center space-x-3">
+            <Home className="w-5 h-5" />
+            <a href="https://maps.apple.com/?q=1735+Pennsylvania+Ave,+McDonough,+GA+30523" target="_blank" rel="noopener noreferrer" className="text-[#a96c65] hover:underline">
+              1735 Pennsylvania Ave, McDonough, GA 30523
+            </a>
+            <span className="sr-only">
+              <a href="https://www.google.com/maps?q=1735+Pennsylvania+Ave,+McDonough,+GA+30523">Google Maps</a>
+            </span>
+          </div>
 	<div className="flex items-center space-x-3">
  	  <img src="/instagram.png" alt="Instagram" className="w-5 h-5" />
  	  <a href="https://www.instagram.com/mylendertiffany" className="text-[#a96c65] hover:underline">
