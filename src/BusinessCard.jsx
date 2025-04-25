@@ -165,7 +165,7 @@ export default function BusinessCard() {
         </div>
 
         <div className="mt-4 flex flex-col items-center gap-2">
-          <img src="/New Lakeview Logo.png" alt="Lakeview Logo" className="h-10" />
+          <img src="/newlogo.png" alt="Lakeview Logo" className="h-10" />
           <img src="/equal housing.png" alt="Equal Housing Opportunity" className="h-6" />
         </div>
       </div>
