@@ -75,7 +75,7 @@ export default function BusinessCard() {
         )}
 
         <div className="text-center">
-          <img src="/539A0076.jpg" alt="Tiffany Burchfield" className="w-32 h-40 mx-auto mb-4 object-contain" />
+          <img src="/headshot1.jpg" alt="Tiffany Burchfield" className="w-32 h-40 mx-auto mb-4 object-contain" />
           <h1 className="text-2xl font-bold text-[#a96c65]">Tiffany Burchfield</h1>
           <p className="text-[#8c7266]">Branch Manager | NMLSR: 1614501</p>
         </div>
@@ -165,7 +165,7 @@ export default function BusinessCard() {
         </div>
 
         <div className="mt-4 flex flex-col items-center gap-2">
-          <img src="/Logo.jpg" alt="Lakeview Logo" className="h-10" />
+          <img src="/New Lakeview Logo.png" alt="Lakeview Logo" className="h-10" />
           <img src="/equal housing.png" alt="Equal Housing Opportunity" className="h-6" />
         </div>
       </div>
